@@ -55,7 +55,7 @@ header span {
 }
 
 
-a p:hover {
+.commandOption p:hover {
     color: gray;
 }
 
