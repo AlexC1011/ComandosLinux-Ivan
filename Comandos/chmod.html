@@ -65,8 +65,8 @@
                <!-- Opciones -->
                 <p class="boxTitle"> <strong>Opciones</strong></p>
                 <ul>
-                    <li> <span>-c</span>: se utiliza para mostrar los cambios de permisos que se realizarían sin aplicarlos realmente.</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-c</span>: Se utiliza para mostrar los cambios de permisos que se realizarían sin aplicarlos realmente.</li> <br>
+                    <li> <span>-v</span>: Muestra un mensaje detallado para cada archivo o directorio al que se le cambian los permisos. Es útil para ver exactamente qué cambios se aplican.</li> <br>
                     <li> <span>-i</span>: Opción</li> <br>
                 </ul>
                 
@@ -81,8 +81,12 @@
                         <p><span>chmod o-w alumnos.txt</span></p>
                     </li>
                     <li>
-                        <p>sirve para simular los cambios de permisos que se realizarían en un archivo o directorio, sin aplicarlos de forma definitiva.</p>
+                        <p>Sirve para simular los cambios de permisos que se realizarían en un archivo o directorio, sin aplicarlos de forma definitiva.</p>
                         <p><span>chmod -c u=rw,g=r,o= viaje.txt</span></p>
+                    </li>
+                    <li>
+                        <p>Este comando indica que los permisos del archivo se han actualizado para permitir la escritura al grupo.</p>
+                        <p><span>chmod -v g+w miarchivo.txt</span></p>
                     </li>
                 </ul>
 
