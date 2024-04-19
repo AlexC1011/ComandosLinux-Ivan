@@ -59,8 +59,8 @@
                 <p class="boxTitle"> <strong>Opciones</strong></p>
                 <ul>
                     <li> <span>-b</span>: Esta opción ignora los espacios en blanco al principio de la línea.</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-n</span>: Compara según el número</li> <br>
+                    <li> <span>-r</span>: Ordena las líneas de salida en orden inverso. Es decir, lo que antes estaba al final, ahora estará al principio, y viceversa.</li> <br>
                 </ul>
                 
                 <br> 
@@ -108,7 +108,7 @@
 
                     <li>
                         <p>
-                            <span>sort [fichero]</span><br>
+                            <span>sort -b [fichero]</span><br>
                             Si yo tengo un archivo como este: <br><br>
                             <span style="display: block; max-width: 50%; min-width: 250px; background-color: rgb(100, 100, 100);">
                                 MX Linux <br>
@@ -132,11 +132,33 @@
                     </li>
 
                     <li>
-                        <p><span>sort [opcion] blablabla [fichero]</span></p>
+                        <p>
+                            Teniendo un archivo numeros.txt con numeros aleatorios:
+                        </p>
+                        <span class="textBox">
+                            10 <br>
+                            100 <br>
+                            2 <br>
+                            50 <br>
+                        </span>
+                        <p><span>sort -n numeros.txt</span></p>
+                        <p>
+                            Va a ordenar los numeros de menor a mayor
+                        </p>
+                        <span class="textBox">
+                            2 <br>
+                            10 <br>
+                            50 <br>
+                            100 <br>
+                        </span>
+
                     </li>
 
                     <li>
-                        <p><span>sort [opcion] blablabla [fichero]</span></p>
+                        <p><span>sort -r viaje.txt</span></p>
+                        <p>
+                            Ordenar alfabéticamente en orden inverso
+                        </p>
                     </li>
                 </ol>
 
